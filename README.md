@@ -94,3 +94,25 @@ In addition, I recommend to disable the Drive API and delete `client_secrets.jso
 
  Please make sure that the `--resolution` option for both scripts is the same
 
+## Acknowledgements
+We wish to thank Thevina Dokka for helping us collecting the dataset.
+
+Original face images were collected in the [NVIDIA FFHQ dataset](https://github.com/NVlabs/ffhq-dataset).
+> **A Style-Based Generator Architecture for Generative Adversarial Networks**<br>
+> Tero Karras, Samuli Laine, Timo Aila, CVPR 2019<br>
+> http://openaccess.thecvf.com/content_CVPR_2019/papers/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.pdf
+
+Age & gender labels and confidence scores were collected using the [Appen](https://www.appen.com/) platform.
+
+Head pose, glasses type and eye occlusion score were extraceted using the [Face++](https://www.faceplusplus.com/) platform.
+
+Face Semantic maps were acquired by training a pytorch implementation of [DeepLabV3](https://github.com/chenxi116/DeepLabv3.pytorch) network on the [CelebAMASK-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset.
+> **Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation**<br>
+> Liang-Chieh Chen, Yukun Zhu, George Papandreou, Florian Schroff, Hartwig Adam, ECCV 2018<br>
+> http://openaccess.thecvf.com/content_ECCV_2018/papers/Liang-Chieh_Chen_Encoder-Decoder_with_Atrous_ECCV_2018_paper.pdf
+
+> **MaskGAN: Towards Diverse and Interactive Facial Image Manipulation**<br>
+> Cheng-Han Lee, Ziwei Liu, Lingyun Wu, Ping Luo, CVPR 2020<br>
+> https://arxiv.org/pdf/1907.11922.pdf
+
+Credits: Royorel (FFHQ Aging) https://github.com/royorel/FFHQ-Aging-Dataset
